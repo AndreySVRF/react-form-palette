@@ -1,0 +1,35 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+
+  &-title {
+    margin-bottom: 11px;
+    margin-left: 12px;
+    font-weight: 700;
+
+    .input-error {
+      color: red;
+      margin-left: 10px;
+    }
+  }
+
+  input, textarea {
+    font-family: 'GothamPro', sans-serif;
+    padding: 7px 12px;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.24);
+    color: rgba(235, 235, 245, 0.6);
+    font-size: 17px;
+    border: none;
+    outline: none;
+
+    &.btn {
+      margin: 20px 0 10px;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
