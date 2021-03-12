@@ -1,1 +1,1 @@
-# Test Project on React JS
+# Test Project on React & Redux

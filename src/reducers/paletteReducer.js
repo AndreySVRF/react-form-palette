@@ -13,7 +13,14 @@ export default function paletteReducer(state = defaultState, action) {
         colors: [
           ...state.colors.slice(0, action.payload.position),
           action.payload.colorObj,
-          ...state.colors.slice(action.payload.position+1)
+          ...state.colors.slice(action.payload.position + 1)
+        ]
+      };
+    case 'DELETE_COLOR':
+      return {
+        colors: [
+          ...state.colors.slice(0, action.payload),
+          ...state.colors.slice(action.payload + 1)
         ]
       };
     default:

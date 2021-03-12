@@ -22,6 +22,7 @@ body {
   padding: 43px;
   background: var(--main-bg);
   color: var(--font-color);
+  transition: all 0.2s;
 
   /* Vars */
   --main-bg: #1F2223;
@@ -29,6 +30,7 @@ body {
   --font-color: rgba(235, 235, 245, 0.6);
   --link-color: #ffffff;
   --btn-color: #007AFF;
+  --input-color: rgba(235, 235, 245, 0.6);
 
   &__container {
     padding: 51px;
@@ -42,6 +44,9 @@ body {
 .app[data-theme='light'] {
   --main-bg: #fefefe;
   --content-bg: #f1f1f1;
+  --font-color: rgba(49, 49, 49, 09);
+  --link-color: #000000;
+  --input-color: rgba(49, 49, 49, 09)
 }
 
 .btn {
@@ -68,3 +73,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 20px;
+
+    &__container {
+      padding: 20px;
+    }
+  }
+}

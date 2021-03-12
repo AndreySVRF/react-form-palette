@@ -7,3 +7,8 @@ export const updateColor = (colorObj, position) => ({
   type: 'UPDATE_COLOR',
   payload: {colorObj, position}
 })
+
+export const deleteColor = (position) => ({
+  type: 'DELETE_COLOR',
+  payload: position
+})

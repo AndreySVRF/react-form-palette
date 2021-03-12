@@ -1,4 +1,7 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 17px 24px;
 
   a {
@@ -17,6 +20,35 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  .change-theme {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+
+    &:hover {
+      color: var(--btn-color);
+    }
+    img {
+      width: 32px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+
+    &__links {
+      margin-bottom: 20px;
     }
   }
 }
