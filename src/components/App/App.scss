@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: local('GothamPro'), url(../../assets/fonts/GothamPro.woff) format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'GothamPro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  list-style: none;
+}
+
+.app {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 43px;
+  background: var(--main-bg);
+  color: var(--font-color);
+
+  /* Vars */
+  --main-bg: #1F2223;
+  --content-bg: #000000;
+  --font-color: rgba(235, 235, 245, 0.6);
+  --link-color: #ffffff;
+  --btn-color: #007AFF;
+
+  &__container {
+    padding: 51px;
+    border-radius: 28px;
+    background: var(--content-bg);
+    max-width: 1354px;
+    margin: 0 auto;
+  }
+}
+
+.app[data-theme='light'] {
+  --main-bg: #fefefe;
+  --content-bg: #f1f1f1;
+}
+
+.btn {
+  font-family: 'GothamPro', sans-serif;
+  background: var(--btn-color) !important;
+  color: #ffffff !important;
+  line-height: 22px;
+  width: 100%;
+  font-size: 17px;
+  padding: 14px 16px !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.15s;
+  outline: none;
+
+  &:hover {
+    background: lighten(#007AFF, 15) !important;
+  }
+
+  &[disabled] {
+    background: darken(#007AFF, 15) !important;
+    cursor: not-allowed;
+  }
+}
+
